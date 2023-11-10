@@ -1,6 +1,6 @@
 
         .container {
-            width: 100%;
+
             margin: auto;
             overflow: hidden;
             height: 600px;
@@ -61,3 +61,27 @@
             padding: 10px;
             cursor: pointer;
         }
+
+        @media only screen and (max-width: 700px) {
+            .container {
+
+            
+                width: 100%;
+                height: auto;
+            }
+    
+    
+            .gallery {
+
+                width: 100%;
+                height: auto;
+            }
+
+            .phone-info {
+
+                font-size: 1rem;
+                -webkit-text-stroke: 1px rgb(0, 0, 0);
+            }
+          }
+
+
