@@ -72,10 +72,11 @@ body {
   text-decoration: none;
   background-color: #0f1220;
   color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .menuItem:hover {
-  background-color: #333;
+  background-color: #555;
 }
 
 .menuItem:active {

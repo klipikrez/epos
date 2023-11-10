@@ -27,7 +27,8 @@
           <a href="about.html" class="menuItem">about</a>
           <a href="contact.html" class="menuItem">contact us</a>
         </div>
-      </header>
+    </header>
+
         <div class="filters">
             <button class="filter-btn" onclick="filterPhones('all')">All Phones</button>
             <button class="filter-btn" onclick="filterPhones('samsung')">Samsung</button>
@@ -37,32 +38,38 @@
 
         <div class="gallery">
             <div class="phone" data-filter="samsung">
-                <img src="samsung_phone.jpg" alt="Samsung Phone">
+                <img src="/Imports/iamges/phones/uhh.png" alt="Samsung Phone">
                 <p>Samsung Galaxy S21</p>
+                <p class="price">$21000</p>
             </div>
             <div class="phone" data-filter="apple">
-                <img src="iphone.jpg" alt="iPhone">
+                <img src="/Imports/iamges/phones/iphone1.png" alt="iPhone">
                 <p>iPhone 13 Pro</p>
+                <p class="price">$21000</p>
             </div>
             <div class="phone" data-filter="banana">
-                <img src="banana_phone.jpg" alt="Banana Phone">
+                <img src="/Imports/iamges/phones/Banana1.png" alt="Banana Phone">
                 <p>Banana Phone XL</p>
+                <p class="price">$21000</p>
             </div>
             <div class="phone" data-filter="samsung">
-                <img src="samsung_phone2.jpg" alt="Samsung Phone">
+                <img src="/Imports/iamges/phones/sam21.png" alt="Samsung Phone">
                 <p>Samsung Galaxy Note 20</p>
+                <p class="price">$21000</p>
             </div>
             <div class="phone" data-filter="apple">
-                <img src="iphone2.jpg" alt="iPhone">
+                <img src="/Imports/iamges/phones/ipo23.png" alt="iPhone">
                 <p>iPhone SE</p>
+                <p class="price">$21000</p>
             </div>
             <div class="phone" data-filter="banana">
-                <img src="banana_phone2.jpg" alt="Banana Phone">
+                <img src="/Imports/iamges/phones/Banana2.png" alt="Banana Phone">
                 <p>Banana Phone Mini</p>
+                <p class="price">$21000</p>
             </div>
         </div>
-    </div>
 
+</div>
     <script>
         function filterPhones(filter) {
             const phones = document.querySelectorAll('.phone');
