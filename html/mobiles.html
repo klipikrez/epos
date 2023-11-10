@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobiles.css">
+    <title>Phone Gallery</title>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="topBar">
+          <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
+          <div class="barItem">+052 52525252</div>
+          <div class="barItem">information@info.com</div>
+          <div class="barItem"><a href="">help?</a></div>
+        </div>
+        <div class="logoBar">
+          <a href="home.html"
+            ><img src="/Imports/logo.png" alt="" class="logo"
+          /></a>
+        </div>
+        <div class="menuBar">
+          <a href="home.html" class="menuItem" onclick="">home</a>
+          <a href="mobiles.html" class="menuItem">mobiles</a>
+          <a href="about.html" class="menuItem">about</a>
+          <a href="contact.html" class="menuItem">contact us</a>
+        </div>
+      </header>
+        <div class="filters">
+            <button class="filter-btn" onclick="filterPhones('all')">All Phones</button>
+            <button class="filter-btn" onclick="filterPhones('samsung')">Samsung</button>
+            <button class="filter-btn" onclick="filterPhones('apple')">Apple</button>
+            <button class="filter-btn" onclick="filterPhones('banana')">Banana Phone</button>
+        </div>
+
+        <div class="gallery">
+            <div class="phone" data-filter="samsung">
+                <img src="samsung_phone.jpg" alt="Samsung Phone">
+                <p>Samsung Galaxy S21</p>
+            </div>
+            <div class="phone" data-filter="apple">
+                <img src="iphone.jpg" alt="iPhone">
+                <p>iPhone 13 Pro</p>
+            </div>
+            <div class="phone" data-filter="banana">
+                <img src="banana_phone.jpg" alt="Banana Phone">
+                <p>Banana Phone XL</p>
+            </div>
+            <div class="phone" data-filter="samsung">
+                <img src="samsung_phone2.jpg" alt="Samsung Phone">
+                <p>Samsung Galaxy Note 20</p>
+            </div>
+            <div class="phone" data-filter="apple">
+                <img src="iphone2.jpg" alt="iPhone">
+                <p>iPhone SE</p>
+            </div>
+            <div class="phone" data-filter="banana">
+                <img src="banana_phone2.jpg" alt="Banana Phone">
+                <p>Banana Phone Mini</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterPhones(filter) {
+            const phones = document.querySelectorAll('.phone');
+
+            phones.forEach(phone => {
+                const dataFilter = phone.getAttribute('data-filter');
+                if (filter === 'all' || filter === dataFilter) {
+                    phone.style.display = 'block';
+                } else {
+                    phone.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
