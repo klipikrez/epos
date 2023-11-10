@@ -75,6 +75,15 @@ body {
   transition: background-color 0.2s ease-in-out;
 }
 
+.infoTextContainer{
+  background-color: #0e1920;
+  color: #e8491d;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .menuItem:hover {
   background-color: #555;
 }

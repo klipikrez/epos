@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Phone Gallery</title>
     
-  </head>
-  <body>
-    <header class="header">
-      <div class="topBar">
-        <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
-        <div class="barItem">+052 52525252</div>
-        <div class="barItem">information@info.com</div>
-        <div class="barItem"><a href="">help?</a></div>
-      </div>
-      <div class="logoBar">
-        <a href="home.html"
-          ><img src="/Imports/logo.png" alt="" class="logo"
-        /></a>
-      </div>
-      <div class="menuBar">
-        <a href="home.html" class="menuItem" onclick="">home</a>
-        <a href="mobiles.html" class="menuItem">mobiles</a>
-        <a href="about.html" class="menuItem">about</a>
-        <a href="contact.html" class="menuItem">contact us</a>
-      </div>
-    </header>
-    <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b
-    <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b
-    <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b
-    <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b
-    <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b <br />b
-    <br />b <br />b <br />b
-  </body>
+</head>
+<body>
+  <header class="header">
+    <div class="topBar">
+      <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
+      <div class="barItem">+052 52525252</div>
+      <div class="barItem">information@info.com</div>
+      <div class="barItem"><a href="">help?</a></div>
+    </div>
+    <div class="logoBar">
+      <a href="home.html"
+        ><img src="/Imports/logo.png" alt="" class="logo"
+      /></a>
+    </div>
+    <div class="menuBar">
+      <a href="home.html" class="menuItem" onclick="">home</a>
+      <a href="mobiles.html" class="menuItem">mobiles</a>
+      <a href="about.html" class="menuItem">about</a>
+      <a href="contact.html" class="menuItem">contact us</a>
+    </div>
+  </header>
+  
+    <div class="container">
+        <div class="gallery">
+            <div class="phone-item" id="phone1">
+                <img src="/Imports/iamges/phones/Banana1.png" alt="Banana Phone 1">
+                <div class="phone-info">
+                    <h2>Banana Phone 1</h2>
+                    <p>Price: $199</p>
+                </div>
+            </div>
+            <div class="phone-item" id="phone2">
+                <img src="/Imports/iamges/phones/Banana2.png" alt="Banana Phone 2">
+                <div class="phone-info">
+                    <h2>Banana Phone 2</h2>
+                    <p>Price: $249</p>
+                </div>
+            </div>
+            <div class="phone-item" id="phone3">
+                <img src="/Imports/iamges/phones/iphone1.png" alt="iPhone 1">
+                <div class="phone-info">
+                    <h2>iPhone 1</h2>
+                    <p>Price: $699</p>
+                </div>
+            </div>
+            <div class="phone-item" id="phone4">
+                <img src="/Imports/iamges/phones/ipo23.png" alt="iPhone 23">
+                <div class="phone-info">
+                    <h2>iPhone 23</h2>
+                    <p>Price: $1499</p>
+                </div>
+            </div>
+            <div class="phone-item" id="phone5">
+                <img src="/Imports/iamges/phones/sam21.png" alt="Samsung Galaxy S21">
+                <div class="phone-info">
+                    <h2>Samsung Galaxy S21</h2>
+                    <p>Price: $899</p>
+                </div>
+            </div>
+            <div class="phone-item" id="phone6">
+                <img src="/Imports/iamges/phones/uhh.png" alt="Uhh Phone">
+                <div class="phone-info">
+                    <h2>Uhh Phone</h2>
+                    <p>Price: $299</p>
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <button onclick="prevPhone()">&lt;</button>
+                <button onclick="nextPhone()">&gt;</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        let currentPhone = 1;
+
+        function showPhone(phoneIndex) {
+            const phones = document.querySelectorAll('.phone-item');
+            phones.forEach(phone => phone.style.display = 'none');
+            
+            const current = document.getElementById('phone' + phoneIndex);
+            current.style.display = 'flex';
+        }
+
+        function nextPhone() {
+            currentPhone = (currentPhone % 6) + 1;
+            showPhone(currentPhone);
+        }
+
+        function prevPhone() {
+            currentPhone = (currentPhone - 2 + 6) % 6 + 1;
+            showPhone(currentPhone);
+        }
+
+        // Show the initial phone
+        showPhone(currentPhone);
+
+        setInterval(() => {
+            nextPhone();
+        }, 5000);
+    </script>
+</body>
 </html>
