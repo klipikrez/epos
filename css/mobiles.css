@@ -1,7 +1,3 @@
-body {
-padding-left: 30px;
-padding-right: 30px;
-}
 
 .gallery {
     display: flex;
@@ -90,5 +86,10 @@ p{
     .phone {
         width: 600px;
         max-width: 300px;
+    }
+
+    .BodyContainer{
+        padding: 30px;
+
     }
   }

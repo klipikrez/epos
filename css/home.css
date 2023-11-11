@@ -82,6 +82,11 @@
                 font-size: 1rem;
                 -webkit-text-stroke: 1px rgb(0, 0, 0);
             }
+            .BodyContainer{
+                padding: 30px;
+        
+            }
+
           }
 
 

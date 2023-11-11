@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mobiles.css">
+    <script src="/javascript/scripts.js"></script>
     <title>Phone Gallery</title>
     
 </head>
-<body>
+<body onload = "viewForm()">
     <header class="header">
-        <div class="topBar">
-          <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
-          <div class="barItem">+052 52525252</div>
-          <div class="barItem">information@info.com</div>
-          <div class="barItem"><a href="">help?</a></div>
-        </div>
-        <div class="logoBar">
-          <a href="home.html"
-            ><img src="/Imports/logo.png" alt="" class="logo"
-          /></a>
-        </div>
-        <div class="menuBar">
-          <a href="home.html" class="menuItem" onclick="">home</a>
-          <a href="mobiles.html" class="menuItem">mobiles</a>
-          <a href="about.html" class="menuItem">about</a>
-          <a href="contact.html" class="menuItem">contact us</a>
-        </div>
+      <div class="topBar">
+        <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
+        <div class="barItem">+052 52525252</div>
+        <div class="barItem">information@info.com</div>
+        <div class="barItem"><a href="">help?</a></div>
+      </div>
+      <div class="logoBar">
+        <a href="home.html"
+          ><img src="/Imports/logo.png" alt="" class="logo"
+        /></a>
+      </div>
+      <div class="menuBar">
+        <a class="menuItem" id="burger" onclick="ToggleBurger()">-</a>
+        <a href="home.html" class="menuItem" onclick="">home</a>
+        <a href="mobiles.html" class="menuItem">mobiles</a>
+        <a href="about.html" class="menuItem">about</a>
+        <a href="contact.html" class="menuItem">contact us</a>
+      </div>
     </header>
+    <div class="BodyContainer">
 
         <div class="filters">
             <button class="filter-btn" onclick="filterPhones('all')">All Phones</button>
@@ -68,12 +71,13 @@
                 <p class="price">$21000</p>
             </div>
         </div>
-
-</div>
+        
+    </div>
+    </div>
     <script>
         function filterPhones(filter) {
             const phones = document.querySelectorAll('.phone');
-
+            
             phones.forEach(phone => {
                 const dataFilter = phone.getAttribute('data-filter');
                 if (filter === 'all' || filter === dataFilter) {
@@ -83,6 +87,6 @@
                 }
             });
         }
-    </script>
+        </script>
 </body>
 </html>

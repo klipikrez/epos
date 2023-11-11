@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <script src="/javascript/scripts.js"></script>
     <title>Contact Us</title>
    
 </head>
-<body>
+<body onload = "viewForm()">
   <header class="header">
     <div class="topBar">
       <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
@@ -22,59 +23,64 @@
       /></a>
     </div>
     <div class="menuBar">
+      <a class="menuItem" id="burger" onclick="ToggleBurger()">-</a>
       <a href="home.html" class="menuItem" onclick="">home</a>
       <a href="mobiles.html" class="menuItem">mobiles</a>
       <a href="about.html" class="menuItem">about</a>
       <a href="contact.html" class="menuItem">contact us</a>
     </div>
   </header>
-  <div class="SideBySide">
-    <div class="container">
+  <div class="BodyContainer">
 
-            <form >
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="reset">Submit</button>
-            </form>
-
-    </div>
-
-
+    <div class="SideBySide">
+      <div class="container">
+        
+        <form >
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="reset">Submit</button>
+        </form>
+        
+      </div>
+      
+      
       <div class="infoTextContainer"">
-          <label style="font-size: 2rem;">Contact info</label>
-
-          <p>Corporate Headquarters:</p>
-          <p>Patris Lumumba</p>
-          <br>
-          <label style="font-size: 1.2rem;">Sales and info:</label>
-          <p>Email:</p>
-          <p>bobbanana52@gmail.com</p>
-          <br>
-
-          <p>phone:</p>
-          <p>+052 52525252</p>
-
-          <br>
-          <label style="font-size: 1.2rem;">Cyber security manager:</label>
-          <p>Email:</p>
-          <p>Žarko@gmail.com</p>
-          <br>
-
-          <p>phone:</p>
-          <p>+052 52525252</p>
-
-
-</div>
-</div>
-</body>
-</html>
+        <label style="font-size: 2rem;">Contact info</label>
+        
+        <p>Corporate Headquarters:</p>
+        <p>Patris Lumumba</p>
+        <br>
+        <label style="font-size: 1.2rem;">Sales and info:</label>
+        <p>Email:</p>
+        <p>bobbanana52@gmail.com</p>
+        <br>
+        
+        <p>phone:</p>
+        <p>+052 52525252</p>
+        
+        <br>
+        <label style="font-size: 1.2rem;">Cyber security manager:</label>
+        <p>Email:</p>
+        <p>Žarko@gmail.com</p>
+        <br>
+        
+        <p>phone:</p>
+        <p>+052 52525252</p>
+        
+        
+      </div>
+    </div>
+    </div>
+  </body>
+  </html>
+  
