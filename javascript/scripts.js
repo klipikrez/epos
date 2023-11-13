@@ -1,6 +1,5 @@
 function ToggleBurger(burgerButton){
     const buttons = document.querySelectorAll('.menuItem');
-    console.log(buttons[1].style.display);
     if(buttons[1].style.display == 'none')
     {
         ShowBurgerButtons();

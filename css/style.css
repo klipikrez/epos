@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color:#192731;
+  background-color: #F4F3EE
+  ;
   padding: 0;
   padding-top: 0px;
 }
@@ -29,7 +30,7 @@ body {
 .topBar {
   display: flex;
 
-  background-color: #0f1220; 
+  background-color: #E0AFA0; 
   color: #fff; 
   width: 100%;
   padding: 15px;
@@ -48,7 +49,8 @@ body {
 
 .logoBar {
   display: flex;
-  background-color: #192731;
+  background-color: #463F3A
+  ;
   color: #fff;
   height: 100%;
   width: 100%;
@@ -61,7 +63,7 @@ body {
 
 .menuBar {
   display: flex;
-  background-color: #0f1220;
+  background-color: #8A817C;
   color: #fff; 
   height: 100%;
   width: 100%;
@@ -76,14 +78,14 @@ body {
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  background-color: #0f1220;
+  background-color: #8A817C;
   color: #ffffff;
   transition: background-color 0.2s ease-in-out;
 }
 
 .infoTextContainer{
-  background-color: #0e1920;
-  color: #e8491d;
+  background-color: #463F3A;
+  color: #ffffff;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
@@ -96,7 +98,11 @@ body {
 }
 
 .menuItem:active {
-  background-color: #e8491d; 
+  background-color: #cb75b3; 
+}
+
+.menuItem:visited{
+  background-color: #8A817C;
 }
 
 @media only screen and (max-width: 700px) {

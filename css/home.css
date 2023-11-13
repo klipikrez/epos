@@ -56,11 +56,30 @@
 
         .nav-buttons button {
             background-color: #333;
-            color: #e8491d;
+            color: #cb75b3;
             border: none;
             padding: 10px;
             cursor: pointer;
         }
+
+        .animated_text {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 35px;
+            color: rgb(255, 255, 255);
+    animation-name: color_change;
+    animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+        }
+
+
+        @keyframes color_change {
+            from {background-color: rgb(255, 0, 234);}
+            to {background-color: rgb(102, 0, 255);}
+        
+          }
+
 
         @media only screen and (max-width: 700px) {
             .container {

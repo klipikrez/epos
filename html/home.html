@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/home.css">
     <script src="/javascript/scripts.js"></script>
-    <title>Phone Gallery</title>
+    <title>Home</title>
     
 </head>
 <body onload = "viewForm()">
@@ -35,47 +35,49 @@
       <div class="container">
           <div class="gallery">
               <div class="phone-item" id="phone0">
-                  <img src="/Imports/iamges/phones/Banana1.png" alt="Banana Phone 1">
+                  <img src="/Imports/images/phones/iphone_14_purple.jpg" alt="iPhone 14">
                   <div class="phone-info">
-                      <h2>Banana Phone 1</h2>
-                      <p>Price: $199</p>
+                      <h2>iPhone 14</h2>
+                      <p>Price: $699</p>
                     </div>
                 </div>
                 <div class="phone-item" id="phone1">
-                    <img src="/Imports/iamges/phones/Banana2.png" alt="Banana Phone 2">
+                    <img src="/Imports/images/phones/iphone_15_black.jpg" alt="iPhone 15">
                     <div class="phone-info">
-                        <h2>Banana Phone 2</h2>
-                        <p>Price: $249</p>
+                        <h2>iPhone 15</h2>
+                        <p>Price: $899</p>
                     </div>
                 </div>
                 <div class="phone-item" id="phone2">
-                    <img src="/Imports/iamges/phones/iphone1.png" alt="iPhone 1">
+                    <img src="/Imports/images/phones/samsung_s23_ultra-green.jpg" alt="Samsung S23 Ultra">
                     <div class="phone-info">
-                        <h2>iPhone 1</h2>
+                        <h2>Samsung S23 Ultra</h2>
                         <p>Price: $699</p>
                     </div>
                 </div>
                 <div class="phone-item" id="phone3">
-                    <img src="/Imports/iamges/phones/ipo23.png" alt="iPhone 23">
+                    <img src="/Imports/images/phones/SamsungGalaxys215g.jpg" alt="Samsung Galaxy S21 5G">
                     <div class="phone-info">
-                        <h2>iPhone 23</h2>
-                        <p>Price: $1499</p>
+                        <h2>Samsung Galaxy S21 5G</h2>
+                        <p>Price: $499</p>
                     </div>
                 </div>
                 <div class="phone-item" id="phone4">
-                    <img src="/Imports/iamges/phones/sam21.png" alt="Samsung Galaxy S21">
+                    <img src="/Imports/images/phones/xiaomi_12_lite.jpg" alt="Xiaomi 12 Lite">
                     <div class="phone-info">
-                        <h2>Samsung Galaxy S21</h2>
-                        <p>Price: $899</p>
+                        <h2>Xiaomi 12 Lite</h2>
+                        <p>Price: $499</p>
                     </div>
                 </div>
                 <div class="phone-item" id="phone5">
-                    <img src="/Imports/iamges/phones/uhh.png" alt="Uhh Phone">
+                    <img src="/Imports/images/phones/Xiaomi-13-Ultra.jpg" alt="Xiaomi 13">
                     <div class="phone-info">
-                        <h2>Uhh Phone</h2>
-                        <p>Price: $299</p>
+                        <h2>Xiaomi 13</h2>
+                        <p>Price: $599</p>
                     </div>
                 </div>
+
+                
                 
                 <div class="nav-buttons">
                     <button onclick="prevPhone()">&lt;</button>
@@ -84,13 +86,15 @@
             </div>
             
         </div>
+        <p class="animated_text">KUPI // TELEFONI NISU SKUPI
+            
+        </p>
         </div>
         
         <script>
-            let currentPhone = 1;
+            let currentPhone = 0;
             
-            function showPhone(phoneIndex) {
-            console.log(phoneIndex);
+        function showPhone(phoneIndex) {
             const phones = document.querySelectorAll('.phone-item');
             phones.forEach(phone => phone.style.display = 'none');
             

@@ -14,7 +14,7 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    background-color: #0e1920 ;
+    background-color: #463F3A ;
     transform: rotate3d(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -44,7 +44,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #0f1220;
+    background-color: #463F3A;
     color: #fff;
     transition: background-color 0.2s ease-in-out;
 }
@@ -68,7 +68,7 @@ p{
  }
 
  .price{
-    color: #e8491d;
+    color: #ffffff;
     font-size: 2rem;
  }
 
