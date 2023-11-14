@@ -14,9 +14,11 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    background-color: #0e1920 ;
+    background-color: #fff;
+    color: black;
     transform: rotate3d(0);
     transition: transform 0.3s ease-in-out;
+    box-shadow: 10px 10px #999;
 }
 
 .phone img {
@@ -40,23 +42,24 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 5px;
+    font-weight: bold;
     text-align: left;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #0f1220;
-    color: #fff;
+    background-color: #fff;
+    color: #f0840a;
     transition: background-color 0.2s ease-in-out;
 }
 
 .filter-btn:hover {
-    background-color: #555;
+    background-color: rgb(213, 213, 213);
 }
 
 p{
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: #000;
     margin-bottom: 5%;
     margin-top: 5%;
 }
@@ -66,6 +69,7 @@ p{
     padding-left: 20px;
     padding-right: 20px;
  }
+
 
  .price{
     color: #e8491d;

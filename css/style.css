@@ -3,11 +3,17 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+
+.burger {
+  height: 30px;
+  width: 30px;
 }
 
 body {
-  background-color:#192731;
+  background-color:#eee;
   padding: 0;
   padding-top: 0px;
 }
@@ -18,6 +24,40 @@ body {
   padding: 100px;
 }
 
+.home_sekcija {
+  display: flex;
+  margin: 10px;
+}
+
+.veliki_tekst {
+  background: -webkit-linear-gradient(#f0840a, rgb(235, 171, 8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+
+.mali_teskt {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #f0840a;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: #f0840a;
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #cd730d;
+}
+
+
 .header {
   width: 100%;
   position: relative;
@@ -27,8 +67,8 @@ body {
 }
 
 .topBar {
-  display: flex;
-
+  /* display: flex; */
+  display: none;
   background-color: #0f1220; 
   color: #fff; 
   width: 100%;
@@ -48,8 +88,9 @@ body {
 
 .logoBar {
   display: flex;
-  background-color: #192731;
-  color: #fff;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #eee;
   height: 100%;
   width: 100%;
   padding: 15px;
@@ -57,11 +98,13 @@ body {
 
 .logo {
   margin: 10px;
+  width: 100px;
+  height: 45px;
 }
 
 .menuBar {
   display: flex;
-  background-color: #0f1220;
+  background-color: #f0840a;
   color: #fff; 
   height: 100%;
   width: 100%;
@@ -73,26 +116,27 @@ body {
   padding: 25px;
   padding-left: 40px;
   padding-right: 40px;
-  font-size: 1.2rem;
+  font-size: 15px;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  background-color: #0f1220;
+  background-color: #f0840a;
   color: #ffffff;
   transition: background-color 0.2s ease-in-out;
 }
 
 .infoTextContainer{
-  background-color: #0e1920;
-  color: #e8491d;
+  background-color: #fff;
+  color: #f0840a;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-width: 180px
+  min-width: 250px
 }
 
 .menuItem:hover {
-  background-color: #555;
+  background-color: #cd730d;
 }
 
 .menuItem:active {
@@ -100,6 +144,10 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
+  .home_sekcija {
+    flex-direction: column;
+  }
+
   .menuBar {
     flex-direction: column;
   }

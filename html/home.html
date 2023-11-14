@@ -9,7 +9,7 @@
     <title>Phone Gallery</title>
     
 </head>
-<body onload = "viewForm()">
+<body onload = "viewForm()" style="background-color: #fff;">
   <header class="header">
     <div class="topBar">
       <div class="barItemdisappear">Brzo, efikasno, bezopasno. Fon.</div>
@@ -23,7 +23,7 @@
       /></a>
     </div>
     <div class="menuBar">
-      <a class="menuItem" id="burger" onclick="ToggleBurger()">-</a>
+      <a class="menuItem" id="burger" onclick="ToggleBurger()"><img src="/Imports/burger.svg" class="burger" /></a>
       <a href="home.html" class="menuItem" onclick="">home</a>
       <a href="mobiles.html" class="menuItem">mobiles</a>
       <a href="about.html" class="menuItem">about</a>
@@ -32,7 +32,7 @@
   </header>
   <div class="BodyContainer">
 
-      <div class="container">
+      <!-- <div class="container">
           <div class="gallery">
               <div class="phone-item" id="phone0">
                   <img src="/Imports/iamges/phones/Banana1.png" alt="Banana Phone 1">
@@ -83,8 +83,31 @@
                 </div>
             </div>
             
+        </div> -->
+
+        <div class="home_sekcija">
+
+            <div>
+                <img src="/Imports/home_content.svg" width="450px" height="450px" alt="">
+            </div>
+
+            <div>
+                <h1 class="veliki_tekst">#1 Place to find your new phone!</h1>
+                <div class="mali_teskt">MobileShop is the worlds leader is getting the right customer for your specific phone. <br/>
+                    You can
+                    always negotiate the right prices and the get best deals no matter if you're the seller or the buyer. <br/>
+                    MobileShop has a huge selection of devices to choose from,
+                    <br/>
+                    including the latest models
+                    from top brands such as Apple, Samsung, Huawei, and Google. <br/>
+                </div>
+                <button style="margin-top: 40px;">
+                    <a href="/html/mobiles.html" class="btn">Find your phone today!</a>
+                </button>
+            </div>
         </div>
-        </div>
+
+    </div>
         
         <script>
             let currentPhone = 1;
