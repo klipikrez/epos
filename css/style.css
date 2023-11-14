@@ -58,7 +58,9 @@ body {
 }
 
 .logo {
-  margin: 10px;
+  margin: auto;
+  height: 90px;
+  width: 280px;
 }
 
 .menuBar {
