@@ -30,21 +30,24 @@ body {
 }
 
 .veliki_tekst {
-  background: -webkit-linear-gradient(#f0840a, rgb(235, 171, 8));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 50px;
+  animation-name: color_change;
+  animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
 }
 
 .mali_teskt {
   margin-top: 20px;
   font-weight: bold;
-  color: #f0840a;
+  color: #463F3A;
   font-size: 15px;
 }
 
 .btn {
-  background-color: #f0840a;
+  background-color: #463F3A;
   padding: 15px;
   color: #fff;
   font-size: 16px;
@@ -54,7 +57,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #cd730d;
+  background-color: #cb75b3;
 }
 
 
@@ -98,13 +101,13 @@ body {
 
 .logo {
   margin: 10px;
-  width: 100px;
-  height: 45px;
+  width: 280px;
+  height: 90px;
 }
 
 .menuBar {
   display: flex;
-  background-color: #f0840a;
+  background-color: #463F3A;
   color: #fff; 
   height: 100%;
   width: 100%;
@@ -120,14 +123,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #f0840a;
+  background-color: #463F3A;
   color: #ffffff;
   transition: background-color 0.2s ease-in-out;
 }
 
 .infoTextContainer{
   background-color: #fff;
-  color: #f0840a;
+  color: #463F3A;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
@@ -136,11 +139,11 @@ body {
 }
 
 .menuItem:hover {
-  background-color: #cd730d;
+  background-color: #cb75b3;
 }
 
 .menuItem:active {
-  background-color: #e8491d; 
+  background-color: #70305e; 
 }
 
 @media only screen and (max-width: 700px) {
