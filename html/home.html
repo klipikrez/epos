@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <script src="/javascript/scripts.js"></script>
     <title>Phone Gallery</title>
-    <link rel="shortcut icon" href="/Imports/images/icon/smartphone_phone_icon_177143.ico" type="image/x-icon">
-    
-</head>
-<body onload = "viewForm()" style="background-color: #fff;">
-  <header class="header">
-    
-    <div class="logoBar">
-      <a href="home.html"
-        ><img src="/Imports/images/logo/logo.png" alt="" class="logo"
-      /></a>
-    </div>
-    <div class="menuBar">
-      <a class="menuItem" id="burger" onclick="ToggleBurger()"><img src="/Imports/burger.svg" class="burger" /></a>
-      <a href="home.html" class="menuItem" onclick="">home</a>
-      <a href="mobiles.html" class="menuItem">mobiles</a>
-      <a href="about.html" class="menuItem">about</a>
-      <a href="contact.html" class="menuItem">contact us</a>
-    </div>
-  </header>
-  <div class="BodyContainer">
-
-
-
-        <div class="home_sekcija">
-
-            <div>
-                <img src="/Imports/home_content.svg" width="450px" height="450px" alt="">
-            </div>
-
-            <div>
-                <h1 class="veliki_tekst">#1 Place to find your new phone!</h1>
-                <div class="mali_teskt">MobileShop is the worlds leader is getting the right customer for your specific phone. <br/>
-                    You can
-                    always negotiate the right prices and the get best deals no matter if you're the seller or the buyer. <br/>
-                    MobileShop has a huge selection of devices to choose from,
-                    <br/>
-                    including the latest models
-                    from top brands such as Apple, Samsung, Huawei, and Google. <br/>
-                </div>
-                <button style="margin-top: 40px;">
-                    <a href="/html/mobiles.html" class="btn">Find your phone today!</a>
-                </button>
-            </div>
+    <link
+      rel="shortcut icon"
+      href="/Imports/images/icon/smartphone_phone_icon_177143.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body onload="viewForm()" style="background-color: #fff">
+    <header class="header">
+      <div class="logoBar">
+        <a href="home.html"
+          ><img src="/Imports/images/logo/logo.png" alt="" class="logo" />
+        </a>
+        <h1>Tele(FON)i</h1>
+      </div>
+      <div class="menuBar">
+        <a class="menuItem" id="burger" onclick="ToggleBurger()"
+          ><img src="/Imports/burger.svg" class="burger"
+        /></a>
+        <a href="home.html" class="menuItem" onclick="">home</a>
+        <a href="mobiles.html" class="menuItem">mobiles</a>
+        <a href="about.html" class="menuItem">about</a>
+        <a href="contact.html" class="menuItem">contact us</a>
+      </div>
+    </header>
+    <div class="BodyContainer">
+      <div class="home_sekcija">
+        <div>
+          <img
+            src="/Imports/home_content.svg"
+            width="450px"
+            height="450px"
+            alt=""
+          />
         </div>
 
+        <div>
+          <h1 class="veliki_tekst">#1 Place to find your new phone!</h1>
+          <div class="mali_teskt">
+            MobileShop is the worlds leader is getting the right customer for
+            your specific phone. <br />
+            You can always negotiate the right prices and the get best deals no
+            matter if you're the seller or the buyer. <br />
+            MobileShop has a huge selection of devices to choose from,
+            <br />
+            including the latest models from top brands such as Apple, Samsung,
+            Huawei, and Google. <br />
+          </div>
+          <button style="margin-top: 40px">
+            <a href="/html/mobiles.html" class="btn">Find your phone today!</a>
+          </button>
+        </div>
+      </div>
     </div>
-        
-        <script>
-            let currentPhone = 1;
-            
-            function showPhone(phoneIndex) {
-            console.log(phoneIndex);
-            const phones = document.querySelectorAll('.phone-item');
-            phones.forEach(phone => phone.style.display = 'none');
-            
-            const current = document.getElementById('phone' + phoneIndex);
-            current.style.display = 'flex';
-        }
-        
-        function nextPhone() {
-            currentPhone = (currentPhone + 1) % 6 ;
-            showPhone(currentPhone);
-        }
-        
-        function prevPhone() {
-            currentPhone = (currentPhone - 1 + 6) % 6 ;
-            showPhone(currentPhone);
-        }
-        
+
+    <script>
+      let currentPhone = 1;
+
+      function showPhone(phoneIndex) {
+        console.log(phoneIndex);
+        const phones = document.querySelectorAll(".phone-item");
+        phones.forEach((phone) => (phone.style.display = "none"));
+
+        const current = document.getElementById("phone" + phoneIndex);
+        current.style.display = "flex";
+      }
+
+      function nextPhone() {
+        currentPhone = (currentPhone + 1) % 6;
         showPhone(currentPhone);
-        
-        setInterval(() => {
-            nextPhone();
-        }, 5000);
-        </script>
-</body>
+      }
+
+      function prevPhone() {
+        currentPhone = (currentPhone - 1 + 6) % 6;
+        showPhone(currentPhone);
+      }
+
+      showPhone(currentPhone);
+
+      setInterval(() => {
+        nextPhone();
+      }, 5000);
+    </script>
+  </body>
 </html>
