@@ -19,16 +19,41 @@
   transform: rotate3d(0);
   transition: transform 0.3s ease-in-out;
   box-shadow: 10px 10px #999;
-}
-
-.phone img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
+  perspective: 1000px;
 }
 
 .phone:hover {
   transform: scale(1.06);
+}
+
+.phone .phoneImage,
+.phone .phoneImageAlt {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.phone .phoneImageAlt {
+  opacity: 0;
+  transform: rotateY(-180deg);
+}
+
+.phone:hover .phoneImage {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+
+.phone:hover .phoneImageAlt {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.info {
+  margin-top: 315px;
 }
 
 .filters {
