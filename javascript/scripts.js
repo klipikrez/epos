@@ -8,23 +8,21 @@ function ToggleBurger(burgerButton) {
 }
 
 function ShowBurgerButtons() {
-  const burger = document.getElementById("burger");
-  let display = burger.style.display;
-
   const buttons = document.querySelectorAll(".menuItem");
-  buttons.forEach((button) => (button.style.display = "unset"));
-
-  burger.style.display = display;
+  buttons.forEach((button) => {
+    if (button.id != "burger") {
+      button.style.display = "unset";
+    }
+  });
 }
 
 function HideBurgerButtons() {
-  const burger = document.getElementById("burger");
-  let display = burger.style.display;
-
   const buttons = document.querySelectorAll(".menuItem");
-  buttons.forEach((button) => (button.style.display = "none"));
-
-  burger.style.display = display;
+  buttons.forEach((button) => {
+    if (button.id != "burger") {
+      button.style.display = "none";
+    }
+  });
 }
 
 function viewForm() {
