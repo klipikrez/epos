@@ -9,6 +9,10 @@
 
 #burger {
   display: none;
+}
+
+.burger {
+  display: none;
   height: 30px;
   width: 30px;
 }
@@ -186,6 +190,9 @@ body {
   }
 
   #burger {
+    display: unset;
+  }
+  .burger {
     display: unset;
   }
 }
