@@ -44,8 +44,8 @@
         <div>
           <h1 class="veliki_tekst">#1 Place to find your new phone!</h1>
           <div class="mali_teskt">
-            TeleFONi is the worlds leader is getting the right customer for
-            your specific phone. <br />
+            TeleFONi is the worlds leader is getting the right customer for your
+            specific phone. <br />
             You can always negotiate the right prices and the get best deals no
             matter if you're the seller or the buyer. <br />
             TeleFONi has a huge selection of devices to choose from,
@@ -59,34 +59,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      let currentPhone = 1;
-
-      function showPhone(phoneIndex) {
-        console.log(phoneIndex);
-        const phones = document.querySelectorAll(".phone-item");
-        phones.forEach((phone) => (phone.style.display = "none"));
-
-        const current = document.getElementById("phone" + phoneIndex);
-        current.style.display = "flex";
-      }
-
-      function nextPhone() {
-        currentPhone = (currentPhone + 1) % 6;
-        showPhone(currentPhone);
-      }
-
-      function prevPhone() {
-        currentPhone = (currentPhone - 1 + 6) % 6;
-        showPhone(currentPhone);
-      }
-
-      showPhone(currentPhone);
-
-      setInterval(() => {
-        nextPhone();
-      }, 5000);
-    </script>
   </body>
 </html>
