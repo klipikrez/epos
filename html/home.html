@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prodaja telefona onlajn" />
+    <meta name="keywords" content="Phones, store, prodaja telefona, telefoni" />
+    <meta name="author" content="Aleksandar, Nikola, Anđelija" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/home.css" />
     <script src="/javascript/scripts.js"></script>
@@ -13,24 +16,24 @@
       type="image/x-icon"
     />
   </head>
-  <body onload="viewForm()" style="background-color: #fff">
+  <body onload="viewForm()">
     <header class="header">
       <div class="logoBar">
         <a href="home.html"
           ><img src="/Imports/images/logo/logo.png" alt="" class="logo" />
         </a>
       </div>
-      <div class="menuBar">
-        <a class="menuItem" id="burger" onclick="ToggleBurger()"
+      <nav class="navBar">
+        <a class="navItem" id="burger" onclick="ToggleBurger()"
           ><img src="/Imports/burger.svg" class="burger"
         /></a>
-        <a href="home.html" class="menuItem" onclick="">Početna</a>
-        <a href="mobiles.html" class="menuItem">Telefoni</a>
-        <a href="about.html" class="menuItem">O nama</a>
-        <a href="contact.html" class="menuItem">Kontaktirajte nas</a>
-      </div>
+        <a href="home.html" class="navItem" onclick="">Početna</a>
+        <a href="mobiles.html" class="navItem">Telefoni</a>
+        <a href="about.html" class="navItem">O nama</a>
+        <a href="contact.html" class="navItem">Kontaktirajte nas</a>
+      </nav>
     </header>
-    <div class="BodyContainer">
+    <main class="BodyContainer">
       <div class="home_sekcija">
         <div>
           <img class="homeImage" src="/Imports/home_content.svg" alt="" />
@@ -40,21 +43,21 @@
           <h1 class="veliki_tekst">Tele(fon)i</h1>
           <div class="mali_teskt">
             Dobrodošli u našu online prodavnicu mobilnih telefona! Nastali smo s
-             jednim ciljem - da vam pružimo najnovije i najinovativnije mobilne uređaje po konkurentnim cenama.<br />
-             Kupujte sa nama i budite deo digitalne revolucije! Vaša veza sa najnovijom tehnologijom počinje ovde.
+            jednim ciljem - da vam pružimo najnovije i najinovativnije mobilne
+            uređaje po konkurentnim cenama.<br />
+            Kupujte sa nama i budite deo digitalne revolucije! Vaša veza sa
+            najnovijom tehnologijom počinje ovde. Hvala što ste odabrali nas!
 
-             Hvala što ste odabrali nas!
-             
-              <br />
-            
+            <br />
+
             <br />
             Hvala što ste odabrali nas! <br />
           </div>
           <button style="margin-top: 40px">
-            <a href="/html/mobiles.html" class="btn">Pronađi svoj telefon, već danas  !</a>
+            <a href="/html/mobiles.html" class="btn">Pronađi telefon!</a>
           </button>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

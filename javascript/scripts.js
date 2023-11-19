@@ -1,5 +1,5 @@
 function ToggleBurger(burgerButton) {
-  const buttons = document.querySelectorAll(".menuItem");
+  const buttons = document.querySelectorAll(".navItem");
   if (buttons[1].style.display == "none") {
     ShowBurgerButtons();
   } else {
@@ -8,7 +8,7 @@ function ToggleBurger(burgerButton) {
 }
 
 function ShowBurgerButtons() {
-  const buttons = document.querySelectorAll(".menuItem");
+  const buttons = document.querySelectorAll(".navItem");
   buttons.forEach((button) => {
     if (button.id != "burger") {
       button.style.display = "unset";
@@ -17,7 +17,7 @@ function ShowBurgerButtons() {
 }
 
 function HideBurgerButtons() {
-  const buttons = document.querySelectorAll(".menuItem");
+  const buttons = document.querySelectorAll(".navItem");
   buttons.forEach((button) => {
     if (button.id != "burger") {
       button.style.display = "none";

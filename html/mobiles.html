@@ -1,135 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mobiles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Prodaja telefona onlajn" />
+    <meta name="keywords" content="Phones, store, prodaja telefona, telefoni" />
+    <meta name="author" content="Aleksandar, Nikola, Anđelija" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/mobiles.css" />
     <script src="/javascript/scripts.js"></script>
     <title>TeleFONi - Katalog</title>
-    <link rel="shortcut icon" href="/Imports/images/icon/smartphone_phone_icon_177143.ico" type="image/x-icon">
-    
-</head>
-<body onload = "viewForm()">
+    <link
+      rel="shortcut icon"
+      href="/Imports/images/icon/smartphone_phone_icon_177143.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body onload="viewForm()">
     <header class="header">
-     
       <div class="logoBar">
         <a href="home.html">
-            <img src="/Imports/images/logo/logo.png" alt="" class="logo" />
+          <img src="/Imports/images/logo/logo.png" alt="" class="logo" />
         </a>
         <h1>TeleFONi Katalog</h1>
       </div>
-      <div class="menuBar">
-        <a class="menuItem" id="burger" onclick="ToggleBurger()"><img src="/Imports/burger.svg" class="burger" /></a>
-        <a href="home.html" class="menuItem" onclick="">Početna</a>
-        <a href="mobiles.html" class="menuItem">Telefoni</a>
-        <a href="about.html" class="menuItem">O nama</a>
-        <a href="contact.html" class="menuItem">Kontaktirajte nas</a>
-      </div>
+      <nav class="navBar">
+        <a class="navItem" id="burger" onclick="ToggleBurger()"
+          ><img src="/Imports/burger.svg" class="burger"
+        /></a>
+        <a href="home.html" class="navItem" onclick="">Početna</a>
+        <a href="mobiles.html" class="navItem">Telefoni</a>
+        <a href="about.html" class="navItem">O nama</a>
+        <a href="contact.html" class="navItem">Kontaktirajte nas</a>
+      </nav>
     </header>
-    <div class="BodyContainer">
+    <main class="BodyContainer">
+      <div class="filters">
+        <button class="filter-btn" onclick="filterPhones('all')">
+          Svi telefoni
+        </button>
+        <button class="filter-btn" onclick="filterPhones('samsung')">
+          Samsung
+        </button>
+        <button class="filter-btn" onclick="filterPhones('apple')">
+          Apple
+        </button>
+        <button class="filter-btn" onclick="filterPhones('xiaomi')">
+          Xiaomi
+        </button>
+        <button class="filter-btn" onclick="filterPhones('motorola')">
+          Motorola
+        </button>
+      </div>
 
-        <div class="filters">
-            <button class="filter-btn" onclick="filterPhones('all')">Svi telefoni</button>
-            <button class="filter-btn" onclick="filterPhones('samsung')">Samsung</button>
-            <button class="filter-btn" onclick="filterPhones('apple')">Apple</button>
-            <button class="filter-btn" onclick="filterPhones('xiaomi')">Xiaomi</button>
-            <button class="filter-btn" onclick="filterPhones('motorola')">Motorola</button>
+      <div class="gallery">
+        <div class="phone" data-filter="samsung">
+          <img
+            src="/Imports/images/Telefoni/Galaxy Z Fold5 256GB.jpg"
+            alt="Samsung"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Galaxy Z Fold5 256GB2.jpg"
+            alt="Samsung"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Galaxy Z Fold5</p>
+            <p class="price">$699</p>
+          </div>
+        </div>
+        <div class="phone" data-filter="apple">
+          <img
+            src="/Imports/images/Telefoni/iPhone 11 128GB White.jpg"
+            alt="iPhone"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/iPhone 11 128GB White2.jpg"
+            alt="iPhone"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">iPhone 11</p>
+            <p class="price">$699</p>
+          </div>
+        </div>
+        <div class="phone" data-filter="apple">
+          <img
+            src="/Imports/images/Telefoni/iPhone SE3 64GB Starlight.jpg"
+            alt="iPhone"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/iPhone SE3 64GB Starlight2.jpg"
+            alt="iPhone"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">iPhone SE3</p>
+            <p class="price">$499</p>
+          </div>
+        </div>
+        <div class="phone" data-filter="apple">
+          <img
+            src="/Imports/images/Telefoni/iPhone 14 Pro 256GB Silver.jpg"
+            alt="iPhone"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/iPhone 14 Pro 256GB Silver2.jpg"
+            alt="iPhone"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">iPhone 14 Pro</p>
+            <p class="price">$899</p>
+          </div>
+        </div>
+        <div class="phone" data-filter="xiaomi">
+          <img
+            src="/Imports/images/Telefoni/Xiaomi 11T.jpg"
+            alt="Xiaomi"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Xiaomi 11T2.jpg"
+            alt="Xiaomi"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Xiaomi 11T</p>
+            <p class="price">$299</p>
+          </div>
         </div>
 
-        <div class="gallery">
-            <div class="phone" data-filter="samsung">
-                <img src="/Imports/images/Telefoni/Galaxy Z Fold5 256GB.jpg" alt="Samsung" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Galaxy Z Fold5 256GB2.jpg" alt="Samsung" class="phoneImageAlt">
-                <div class="info">
-                <p class="name">Galaxy Z Fold5</p>
-                <p class="price">$699</p>
-            </div>
-            </div>
-            <div class="phone" data-filter="apple">
-                <img src="/Imports/images/Telefoni/iPhone 11 128GB White.jpg" alt="iPhone" class="phoneImage">
-                <img src="/Imports/images/Telefoni/iPhone 11 128GB White2.jpg" alt="iPhone" class="phoneImageAlt">
-                <div class="info">
-                <p class="name">iPhone 11</p>
-                <p class="price">$699</p>
-                </div>
-            </div>
-            <div class="phone" data-filter="apple">
-                <img src="/Imports/images/Telefoni/iPhone SE3 64GB Starlight.jpg" alt="iPhone" class="phoneImage">
-                <img src="/Imports/images/Telefoni/iPhone SE3 64GB Starlight2.jpg" alt="iPhone" class="phoneImageAlt">
-                <div class="info"><p class="name">iPhone SE3</p>
-                <p class="price">$499</p></div>
-            </div>
-            <div class="phone" data-filter="apple">
-                <img src="/Imports/images/Telefoni/iPhone 14 Pro 256GB Silver.jpg" alt="iPhone" class="phoneImage">
-                <img src="/Imports/images/Telefoni/iPhone 14 Pro 256GB Silver2.jpg" alt="iPhone" class="phoneImageAlt"> 
-                <div class="info"><p class="name">iPhone 14 Pro </p>
-                <p class="price">$899</p></div>
-            </div>
-            <div class="phone" data-filter="xiaomi">
-                <img src="/Imports/images/Telefoni/Xiaomi 11T.jpg" alt="Xiaomi" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Xiaomi 11T2.jpg" alt="Xiaomi" class="phoneImageAlt">
-                <div class="info"><p class="name">Xiaomi 11T</p>
-                <p class="price">$299</p></div>
-            </div>
-            
-            <div class="phone" data-filter="xiaomi">
-                <img src="/Imports/images/Telefoni/Xiaomi 13T.jpg" alt="Xiaomi" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Xiaomi 13T2.jpg" alt="Xiaomi" class="phoneImageAlt">
-                <div class="info"><p class="name">Xiaomi 13T</p>
-                <p class="price">$499</p></div>
-            </div>
-
-            <div class="phone" data-filter="xiaomi">
-                <img src="/Imports/images/Telefoni/Xiaomi 12 Pro.jpg" alt="Xiaomi" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Xiaomi 12 Pro2.jpg" alt="Xiaomi" class="phoneImageAlt">
-                <div class="info"><p class="name">Xiaomi 12 PRO</p>
-                <p class="price">$499</p></div>
-            </div>
-
-            <div class="phone" data-filter="xiaomi">
-                <img src="/Imports/images/Telefoni/Xiaomi_RedmiNote11Pro.jpg" alt="Xiaomi" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Xiaomi_RedmiNote11Pro2.jpg" alt="Xiaomi" class="phoneImageAlt">
-                <div class="info"><p class="name">Xiaomi 11 PRO</p>
-                <p class="price">$499</p></div>
-            </div>
-
-            <div class="phone" data-filter="motorola">
-                <img src="/Imports/images/Telefoni/Motorola_G72.jpg" alt="Motorola" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Motorola_G722.jpg" alt="Motorola" class="phoneImageAlt">
-                <div class="info"><p class="name">Motorola G72</p>
-                <p class="price">$399</p></div>
-            </div>
-            <div class="phone" data-filter="motorola">
-                <img src="/Imports/images/Telefoni/Motorola_Edge30.jpg" alt="Motorola" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Motorola_Edge30Fusion2.jpg" alt="Motorola" class="phoneImageAlt">
-                <div class="info"><p class="name">Motorola Edge 30 Fusion</p>
-                <p class="price">$499</p></div>
-            </div>
-            <div class="phone" data-filter="motorola">
-                <img src="/Imports/images/Telefoni/Motorola_G522.jpg" alt="Motorola" class="phoneImage">
-                <img src="/Imports/images/Telefoni/Motorola_G52.jpg" alt="Motorola" class="phoneImageAlt">
-                <div class="info"><p class="name">Motorola G52</p>
-                <p class="price">$299</p></div>
-            </div>
-
+        <div class="phone" data-filter="xiaomi">
+          <img
+            src="/Imports/images/Telefoni/Xiaomi 13T.jpg"
+            alt="Xiaomi"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Xiaomi 13T2.jpg"
+            alt="Xiaomi"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Xiaomi 13T</p>
+            <p class="price">$499</p>
+          </div>
         </div>
-        
-    </div>
-    </div>
+
+        <div class="phone" data-filter="xiaomi">
+          <img
+            src="/Imports/images/Telefoni/Xiaomi 12 Pro.jpg"
+            alt="Xiaomi"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Xiaomi 12 Pro2.jpg"
+            alt="Xiaomi"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Xiaomi 12 PRO</p>
+            <p class="price">$499</p>
+          </div>
+        </div>
+
+        <div class="phone" data-filter="xiaomi">
+          <img
+            src="/Imports/images/Telefoni/Xiaomi_RedmiNote11Pro.jpg"
+            alt="Xiaomi"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Xiaomi_RedmiNote11Pro2.jpg"
+            alt="Xiaomi"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Xiaomi 11 PRO</p>
+            <p class="price">$499</p>
+          </div>
+        </div>
+
+        <div class="phone" data-filter="motorola">
+          <img
+            src="/Imports/images/Telefoni/Motorola_G72.jpg"
+            alt="Motorola"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Motorola_G722.jpg"
+            alt="Motorola"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Motorola G72</p>
+            <p class="price">$399</p>
+          </div>
+        </div>
+        <div class="phone" data-filter="motorola">
+          <img
+            src="/Imports/images/Telefoni/Motorola_Edge30.jpg"
+            alt="Motorola"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Motorola_Edge30Fusion2.jpg"
+            alt="Motorola"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Motorola Edge 30 Fusion</p>
+            <p class="price">$499</p>
+          </div>
+        </div>
+        <div class="phone" data-filter="motorola">
+          <img
+            src="/Imports/images/Telefoni/Motorola_G522.jpg"
+            alt="Motorola"
+            class="phoneImage"
+          />
+          <img
+            src="/Imports/images/Telefoni/Motorola_G52.jpg"
+            alt="Motorola"
+            class="phoneImageAlt"
+          />
+          <div class="info">
+            <p class="name">Motorola G52</p>
+            <p class="price">$299</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <script>
-        function filterPhones(filter) {
-            const phones = document.querySelectorAll('.phone');
-            
-            phones.forEach(phone => {
-                const dataFilter = phone.getAttribute('data-filter');
-                if (filter === 'all' || filter === dataFilter) {
-                    phone.style.display = 'block';
-                } else {
-                    phone.style.display = 'none';
-                }
-            });
-        }
-        </script>
-</body>
+      function filterPhones(filter) {
+        const phones = document.querySelectorAll(".phone");
+
+        phones.forEach((phone) => {
+          const dataFilter = phone.getAttribute("data-filter");
+          if (filter === "all" || filter === dataFilter) {
+            phone.style.display = "block";
+          } else {
+            phone.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

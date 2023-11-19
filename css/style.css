@@ -34,23 +34,6 @@ body {
   margin: 10px;
 }
 
-.veliki_tekst {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 50px;
-  animation-name: color_change;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.mali_teskt {
-  margin-top: 20px;
-  font-weight: bold;
-  color: #463f3a;
-  font-size: 15px;
-}
-
 .btn {
   background-color: #463f3a;
   padding: 15px;
@@ -114,7 +97,7 @@ body {
   margin-bottom: auto;
 }
 
-.menuBar {
+.navBar {
   display: flex;
   background-color: #463f3a;
   color: #fff;
@@ -123,7 +106,7 @@ body {
   justify-content: center;
 }
 
-.menuItem {
+.navItem {
   margin: 0;
   padding: 25px;
   padding-left: 40px;
@@ -147,11 +130,11 @@ body {
   min-width: 250px;
 }
 
-.menuItem:hover {
+.navItem:hover {
   background-color: #cb75b3;
 }
 
-.menuItem:active {
+.navItem:active {
   background-color: #70305e;
 }
 
@@ -160,7 +143,7 @@ body {
     flex-direction: column;
   }
 
-  .menuBar {
+  .navBar {
     flex-direction: column;
   }
 
